@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Conact us</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">IMED</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Side projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="unit_converter.html">Unit converter JEE</a></li>
+                        <li><a class="dropdown-item" href="user_managemengt.html">User management CRUD JEE</a></li>
+                        <li><a class="dropdown-item" href="product_management.html">Product management CRUD JEE</a></li>
+                        <li><a class="dropdown-item" href="commercial.html">Commercial java swing application</a></li>
+                        <li><a class="dropdown-item" href="dental.html">Dental clinic management</a></li>
+                        <li><a class="dropdown-item" href="pharmacy.html">Pharmacy management system</a></li>
+                        <li><a class="dropdown-item" href="graduation.html">Graduation project</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section style="background-color: black;">  
+      <h1 style="margin-left: 10px; color: white;">Contact me</h1>
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="card border-success mb-3">
+          <div class="card-header bg-transparent border-success">Contact me</div>
+          <div class="card-body text-success">
+              <img src="img/cntc/mail.png" width="50px" height="50px" alt="">
+              <ul style="justify-content:space-around;">
+                <li>
+                  bouzidy.imed@gmail.com
+                </li>
+                <li>
+                  bouzidichaz@gmail.com
+                </li>
+              </ul>
+                  <img src="img/cntc/whats.png" width="50px" height="50px" alt="">
+                  <p>00216 54058988</p>  
+          </div>
+          
+        </div>  
+      </div>
+      <div class="col-xl-6">
+        <div class="comment-form__input-box">
+          <a href="mailto:bouzidy.imed@gmail.com" >
+          <button style="padding: 20px; margin: 10px; background-color: blue; color: white; border-radius: 10px;" type="button" class="thm-btn faqs-contact__btn"><span> Send Mail </span></button></a>
+        </div>
+    </div>
+        <main>
+            <h1 style="margin: 10px; color: white;">Or send me a quick message</h1>
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                            <table>
+                                <tr>
+                                    <td><label style="color: white;" for="FirstName">First Name</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" class="zone" required id="fname" style="width: 350px; height: 40px;"></td>
+                                    </tr>
+                                <tr>
+                                    <td><label style="color: white;" for="LasttName">Last Name</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" class="zone" required id="lname" style="width: 350px; height: 40px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label style="color: white;" for="Phone number">Phone number</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="number" name="" class="zone" required id="phone" style="width: 350px; height: 40px;"></td>
+                                        </tr>
+                                <tr>
+                                    <td><label style="color: white;" for="E-mail">E-mail</label></td></tr>
+                                    <tr>
+                                    <td><input type="email" name="" class="zone" required id="mail" style="width: 350px; height: 40px;"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label style="color: white;">Your message</label>
+                                    </td>  
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea id="msg" class="text_area" cols="19" rows="8" style="width: 350px;"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="submit"  class="btn" style="background-color: blue; width: 350px; color: white; margin-top: 10px; margin-bottom: 20px; justify-content:space-between;"><h3>Send message</h3></button>
+                </form>
+                
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    /*function sendEmail(){
+                        Email.send({
+                        Host : "smtp.mailtrap.io",
+                        Username : "1eb01853640902",
+                        Password : "d0a5391d694ee9",
+                        To : 'xxdd@mail.com',
+                        From : document.getElementById('mail').value,
+                        Subject : "This is the subject",
+                        Body : "And this is the body"
+                    }).then(
+                    message => alert(message)
+                    );
+                    }*/
+                    function sendEmail() {
+                      var Mail = document.getElementById ('fname').value;
+                      
+                      
+Email.send({
+      SecureToken : "a6b8e465-0128-42d3-a1da-9acda109afd9",
+      To : 'bouzidy.imed@gmail.com',
+      From : Mail/*"bouzidichaz@gmail.com"*/,
+      Subject: "Sending Email using javascript with SMTPJS",
+      Body: document.getElementById ('fname').value+'\ '+document.getElementById('lname').value + +document.getElementById('msg').value,
+      Attachments: [{
+      name: "File_Name_with_Extension",
+      path: "Full Path of the file"
+      }]
+      })
+      .then(function (message) {
+      alert("Mail has been sent successfully")
+      window.location='/thnx.html'
+});
+}
+                </script>
+               
+            </div>
+                
+        </main>
+        
+    </section>  
+    <footer class="footer">
+        <p>Copyrights @Imed Bouzidi 2022</p>
+    </footer>  
+</body>
+</html>
